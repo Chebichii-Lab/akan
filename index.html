@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akan Birthdate Generator</title>
+    <link href="bootstrap 5/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet"></link>
+    <script src="js/script.js"></script>
+</head>
+<img src="akan.jpeg">
+    <body>
+        <div class="container-fluid-bg">
+            <h1>Akan Birthdate Generator</h1>
+            <p>The Akan people from Ghana frequently name their children
+                after the day of the week they were born and the order
+                in which they were born.
+            </p>
+            <p>This naming tradition is shared throughout West Africa
+                and the African diaspora.
+            </p>
+            <p>You can find out what your Akan name is below. Enjoy!</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <form class="form-container" id="form">
+                        <h3>Your Information</h3>
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="number" class="form-control" name="date" id="date" required max="31" min="1">
+                            <div class="form-group">
+                                <label for="month">Month</label>
+                                <input type="text" class="form-control" name="month" id="month" required max="12" min="1">
+                                <div class="form-group">
+                                    <label for="year">Year Born</label>
+                                    <input type="number" class="form-control" name="year born" id="year born" required max="2022" min="1950">
+                                    <div class="radio-buttons">
+                                        <label for="male">Male</label>
+                                        <input type="radio" name="male" id="male">
+                                        <label for="female">Female</label>
+                                        <input type="radio" name="female" id="female">
+                                        <button type="submit" onclick="getAkanName()" class="btn btn-success btn-block">Get Akan Name</button>
+            <button type="reset" onclick="clearAkanMessage()" class="btn btn-success btn-block">Clear</button>
+                                        <footer class="footer">
+                                            <p>Created by Serem Natasha Chebichii</p>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
