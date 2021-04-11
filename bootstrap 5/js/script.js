@@ -7,8 +7,11 @@ var year= parseInt(document.getElementById("year").value);
 var date = parseInt(document.getElementById("date").value);
 var date =newDate(year + "/" + month + "/" + date);
 var gender = print();
-var date2 = date.getDay();
+var day2 = day.getDay();
 var akan;
+function day (cc,yy,mm,dd){
+ return ((((cc/19)+1*cc-1)+((5*yy/4))+((26*(mm+1)/10))+dd)%7)+1   
+}
 function getAkanName(){
     if(day <1 || day >31){
         alert("Invalid date");
